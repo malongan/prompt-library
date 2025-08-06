@@ -1,0 +1,692 @@
+/* General Layout & Panels */
+.prompt-library-view .container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 15px;
+    gap: 15px;
+    max-width: 100%;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.prompt-library-view .main-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px;
+    flex: 1;
+    color: var(--text-normal);
+    min-height: 0; /* ✅ FIXED: 这是网格布局中允许子项滚动的重要属性 */
+    max-width: 100%;
+}
+
+.preview-panel,
+.editor-panel,
+.library-panel {
+    background-color: var(--background-secondary);
+    border-radius: var(--radius-l);
+    border: 1px solid var(--background-modifier-border);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    height: 100%;
+    min-width: 0;
+}
+
+/* ✅ 优化: 将 .panel-header 和 .library-header 的样式分开处理 */
+.panel-header,
+.library-header {
+    background-color: var(--background-secondary-alt);
+    color: var(--text-normal);
+    padding: 10px 15px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-shrink: 0;
+}
+
+/* ✅ 优化: 只为预览和编辑器面板的标题保留底部边框 */
+.panel-header {
+    border-bottom: 1px solid var(--background-modifier-border);
+}
+
+/* ✅ 优化: .library-header 将不再有底部边框，从而移除了主标题下的横线 */
+
+.panel-content {
+    padding: 15px;
+    flex: 1; 
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    min-height: 0; 
+}
+
+.library-content {
+    padding: 15px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    overflow-y: auto;
+}
+
+/* --- Preview Panel --- */
+.preview-content-wrapper {
+    background-color: var(--background-primary);
+    border: 1px solid var(--background-modifier-border);
+    border-radius: var(--radius-l);
+    padding: 12px 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    flex-shrink: 0;
+}
+
+.card-title {
+    font-size: 1.3rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.card-text {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    word-break: break-word;
+    white-space: pre-wrap;
+    max-height: 250px;
+    overflow-y: auto;
+    background-color: transparent;
+    padding: 0;
+    border: none;
+}
+
+.preview-actions-row {
+    display: flex;
+    gap: 10px;
+    flex-shrink: 0;
+}
+
+.preview-actions-row > .btn {
+    flex: 1;
+}
+
+.push-right {
+    margin-left: auto;
+}
+
+/* --- Editor Panel --- */
+.editor-row {
+    display: flex;
+    gap: 15px;
+    width: 100%;
+}
+
+.form-group {
+    flex-grow: 1;
+    flex-shrink: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group.form-group-half {
+    flex-basis: calc(50% - 7.5px);
+}
+.form-group.form-group-full {
+    flex-basis: 100%;
+}
+
+.form-group label {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 5px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+.form-group label:hover {
+    color: var(--text-accent);
+}
+
+.form-group textarea,
+.form-group input[type="text"] {
+    flex-grow: 1;
+    resize: vertical;
+    min-height: 40px;
+}
+
+.form-group textarea {
+    min-height: 40px;
+}
+
+.form-group textarea[rows="2"] { min-height: 60px; }
+.form-group textarea[rows="3"] { min-height: 80px; }
+
+
+.ratio-controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 8px;
+}
+.ratio-presets {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    max-width: 100%;
+}
+.ratio-btn {
+    padding: 6px 10px;
+    border-radius: var(--radius-s);
+    background-color: var(--background-modifier-hover);
+    white-space: nowrap;
+}
+.ratio-btn.active {
+    background-color: var(--interactive-accent);
+    color: white;
+}
+.custom-ratio-input {
+    flex: 1;
+    display: flex;
+    min-width: 100px;
+}
+.custom-ratio-input input {
+    min-width: 100px;
+}
+
+.editor-bottom-actions {
+    padding: 10px 15px;
+    border-top: 1px solid var(--background-modifier-border);
+    display: flex;
+    gap: 8px;
+    background-color: var(--background-secondary);
+}
+
+.editor-bottom-actions .btn {
+    flex: 1;
+}
+
+/* --- Library Panel --- */
+.library-section {
+    background-color: var(--background-primary);
+    border: 1px solid var(--background-modifier-border);
+    border-radius: var(--radius-m);
+    padding: 0;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.section-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    padding: 6px 12px;
+    border-bottom: 1px solid var(--background-modifier-border);
+}
+
+.section-title {
+    font-size: 0.95rem;
+    color: var(--text-normal);
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    flex-grow: 1; 
+    cursor: default;
+    margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* ✅ FINAL FIX: Aggressively remove all interaction styles from the title container in ALL states */
+.prompt-library-view .library-section .section-title,
+.prompt-library-view .library-section .section-title:hover,
+.prompt-library-view .library-section .section-title:active,
+.prompt-library-view .library-section .section-title:focus,
+.prompt-library-view .library-section .section-title:focus-within {
+    background-color: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+.library-title-action-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-muted);
+    cursor: pointer;
+    padding: 2px;
+    transition: color 0.2s ease-in-out;
+}
+
+.library-title-action-icon:hover {
+    color: var(--text-accent);
+}
+
+.library-section:not(.is-delete-mode) .section-title:hover .section-title-text {
+    color: var(--text-normal);
+}
+.library-section:not(.is-delete-mode) .section-title:hover .library-title-action-icon {
+    color: var(--text-accent);
+}
+
+.library-header-input {
+    flex: 0 1 150px;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid var(--background-modifier-border);
+    height: 28px;
+    padding: 0 6px;
+    font-size: 0.85rem;
+    color: var(--text-normal);
+}
+.library-header-input:focus {
+    outline: none;
+    border-bottom-color: var(--interactive-accent);
+}
+
+.section-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    padding: 12px;
+}
+
+.library-item {
+    color: inherit;
+    background: var(--background-secondary-alt);
+    padding: 6px 12px;
+    border-radius: var(--radius-s);
+    font-size: 0.8rem;
+    cursor: pointer;
+    text-align: center;
+    border: 1px solid var(--background-modifier-border);
+    white-space: nowrap;
+    position: relative;
+}
+.library-item:hover {
+    background-color: var(--interactive-accent-tint);
+    color: var(--text-normal);
+    border-color: var(--interactive-accent);
+}
+
+.library-item-delete-btn {
+    display: none;
+    position: absolute;
+    top: -6px;
+    right: -6px;
+    width: 16px;
+    height: 16px;
+    background-color: var(--background-modifier-border-hover);
+    color: var(--text-muted);
+    border-radius: 50%;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--background-secondary);
+}
+.library-item-delete-btn:hover {
+    background-color: var(--interactive-accent);
+    color: white;
+}
+
+.library-section.is-delete-mode .library-item-delete-btn {
+    display: flex;
+}
+.library-section.is-delete-mode .library-item {
+    cursor: default;
+}
+
+.library-section.is-delete-mode .section-title-text,
+.library-section.is-delete-mode .library-title-action-icon {
+    color: var(--color-red);
+}
+.library-section.is-delete-mode .library-title-action-icon:hover {
+    color: var(--color-red);
+}
+
+
+/* --- Theme Gallery --- */
+.theme-gallery-manager {
+    background: var(--background-primary);
+    border-radius: var(--radius-m);
+    padding: 12px;
+    border: 1px solid var(--background-modifier-border);
+    flex: 1 1 auto;
+    min-height: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.theme-gallery-manager .theme-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    flex-shrink: 0;
+}
+
+.theme-gallery-manager .theme-header > div {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 600;
+    color: var(--text-accent);
+}
+
+.theme-gallery-manager .theme-button-group {
+    display: flex;
+    gap: 8px;
+}
+
+.theme-gallery-tabs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 12px;
+    border-bottom: 1px solid var(--background-modifier-border);
+    padding-bottom: 8px;
+    flex-shrink: 0;
+}
+
+.theme-tab-btn {
+    padding: 6px 12px;
+    border-radius: var(--radius-s);
+    background-color: transparent;
+    border: 1px solid transparent;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+.theme-tab-btn:hover {
+    background-color: var(--background-modifier-hover);
+}
+.theme-tab-btn.is-active {
+    background-color: var(--interactive-accent);
+    color: white;
+    font-weight: 600;
+}
+
+.theme-gallery-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    gap: 15px;
+    grid-auto-rows: min-content;
+    overflow-y: auto;
+    flex: 1;
+    align-content: start;
+    padding-right: 5px;
+}
+
+.theme-gallery-item {
+    position: relative;
+    border-radius: var(--radius-m);
+    overflow: hidden;
+    background-color: var(--background-secondary);
+    border: 1px solid var(--background-modifier-border);
+    display: flex;
+    flex-direction: column;
+    transition: border-color 0.2s, box-shadow 0.2s;
+    cursor: pointer;
+    aspect-ratio: 1 / 1;
+}
+.theme-gallery-item:hover {
+    border-color: var(--interactive-accent);
+}
+
+.theme-gallery-image-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--background-primary);
+    overflow: hidden;
+}
+.theme-gallery-image-wrapper img,
+.theme-gallery-image-wrapper .placeholder {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.2s ease-out;
+}
+.theme-gallery-item:hover img {
+    transform: scale(1.05);
+}
+.theme-gallery-image-wrapper .placeholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.theme-gallery-image-wrapper .placeholder .obsidian-icon {
+    width: 40px;
+    height: 40px;
+    color: var(--text-faint);
+}
+
+.theme-gallery-item-footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 8px;
+    background: linear-gradient(to top, rgba(0,0,0,0.7), transparent);
+    border-top: none;
+    flex-shrink: 0;
+}
+.theme-gallery-item-title {
+    font-size: 0.8rem;
+    font-weight: 500;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.8);
+}
+
+.favorite-indicator {
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    color: var(--color-yellow);
+    filter: drop-shadow(0 0 3px rgba(0, 0, 0, 0.7));
+    z-index: 2;
+    display: none;
+    pointer-events: none;
+}
+.theme-gallery-item.is-favorite .favorite-indicator {
+    display: block;
+}
+
+/* --- Theme Detail Modal --- */
+.modal.theme-detail-modal {
+    width: 90vw;
+    max-width: 950px;
+    height: auto;
+    max-height: 85vh;
+}
+.theme-detail-modal-container {
+    display: grid;
+    grid-template-columns: minmax(300px, 1fr) 1.2fr;
+    gap: 25px;
+    height: 100%;
+}
+.theme-detail-image-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--background-primary);
+    border-radius: var(--radius-m);
+    overflow: hidden;
+    border: 1px solid var(--background-modifier-border);
+    min-height: 300px;
+    height: 100%;
+}
+.theme-detail-image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.theme-detail-image-container .placeholder-text {
+    color: var(--text-muted);
+}
+.theme-detail-info-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    min-height: 0;
+    overflow-y: auto;
+    padding-right: 10px;
+}
+.theme-detail-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.theme-detail-group > label {
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: var(--text-normal);
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+.theme-detail-title {
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+.theme-detail-prompt-preview {
+    font-size: var(--font-ui-smaller);
+    opacity: 0.9;
+    background-color: var(--background-primary);
+    padding: 10px;
+    border-radius: var(--radius-s);
+    border: 1px solid var(--background-modifier-border);
+    max-height: 200px;
+    overflow-y: auto;
+    white-space: pre-wrap;
+    word-break: break-word;
+    line-height: 1.5;
+}
+.theme-detail-category-display {
+    background-color: var(--background-modifier-hover);
+    padding: 6px 12px;
+    border-radius: var(--radius-m);
+    align-self: flex-start;
+    font-size: 0.9em;
+}
+.theme-detail-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto;
+    padding-top: 15px;
+    border-top: 1px solid var(--background-modifier-border);
+    flex-shrink: 0;
+    gap: 8px;
+}
+.theme-detail-actions-left,
+.theme-detail-actions-right {
+    display: flex;
+    gap: 8px;
+}
+.theme-detail-actions .btn.use-button {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/* Misc & Responsive */
+.highlighted-section {
+    animation: highlight 1.5s ease-out;
+}
+@keyframes highlight {
+    0%, 100% {
+        box-shadow: 0 0 0 0px transparent;
+        border-color: var(--background-modifier-border);
+    }
+    50% {
+        box-shadow: 0 0 12px 2px var(--interactive-accent-rgb-05);
+        border-color: var(--interactive-accent);
+    }
+}
+
+.prompt-library-data-management {
+    padding-top: 15px;
+    margin-top: 15px;
+    border-top: 1px solid var(--background-modifier-border);
+}
+
+@media (max-width: 1500px) {
+    .prompt-library-view .main-container {
+        grid-template-columns: 1fr 1fr;
+    }
+    .preview-panel {
+        grid-column: 1 / span 2;
+    }
+}
+@media (max-width: 1000px) {
+    .prompt-library-view .main-container {
+        grid-template-columns: 1fr;
+    }
+    .preview-panel {
+        grid-column: 1;
+    }
+    .editor-row {
+        flex-direction: column;
+        gap: 12px;
+    }
+    .form-group.form-group-half {
+        flex-basis: 100%;
+    }
+}
+@media (max-width: 768px) {
+    .theme-detail-modal-container {
+        grid-template-columns: 1fr;
+    }
+    .theme-detail-image-container {
+        aspect-ratio: 16/9;
+        min-height: 0;
+    }
+    .modal.theme-detail-modal {
+        max-width: 95vw;
+    }
+}
+@media (max-width: 600px) {
+    .prompt-library-view .container {
+        padding: 8px;
+        gap: 8px;
+    }
+    .panel-content,
+    .library-content {
+        padding: 10px;
+    }
+    .ratio-presets {
+        gap: 4px;
+    }
+    .ratio-btn {
+        padding: 4px 8px;
+        font-size: 0.8rem;
+    }
+    .theme-gallery-content {
+        grid-template-columns: repeat(auto-fill, minmax(85px, 1fr));
+    }
+}
+
+/* --- Theme Detail Modal Customizations --- */
+.theme-detail-modal .theme-detail-group .setting-item-control {
+    width: 100%;
+}
+.theme-detail-modal .theme-detail-group .setting-item-control select,
+.theme-detail-modal .theme-detail-group .setting-item-control input {
+    width: 100%;
+}

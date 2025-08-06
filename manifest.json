@@ -1,0 +1,10 @@
+{
+	"id": "prompt-library",
+	"name": "提示词库",
+	"version": "2.2.0",
+	"minAppVersion": "1.0.0",
+	"description": "一个用于结构化创建、管理和分享创意提示词的词库工具。",
+	"author": "Your Name (refactored by Gemini)",
+	"authorUrl": "https://your-website.com",
+	"isDesktopOnly": false
+}

@@ -1,0 +1,952 @@
+{
+  "editorConfig": {
+    "version": 2,
+    "fields": [
+      {
+        "id": "field_title",
+        "dataKey": "title",
+        "label": "标题",
+        "type": "input",
+        "behavior": "special",
+        "width": "full"
+      },
+      {
+        "id": "field_image_theme",
+        "dataKey": "promptTopic",
+        "label": "生图主题",
+        "rows": 1,
+        "behavior": "append",
+        "width": "full",
+        "type": "textarea"
+      },
+      {
+        "id": "field_main_content",
+        "dataKey": "objects",
+        "label": "主体内容",
+        "rows": 2,
+        "behavior": "append",
+        "width": "full",
+        "type": "textarea"
+      },
+      {
+        "id": "field_style",
+        "dataKey": "style",
+        "label": "风格",
+        "rows": 1,
+        "behavior": "replace",
+        "width": "half",
+        "type": "textarea"
+      },
+      {
+        "id": "field_material",
+        "dataKey": "material",
+        "label": "材质",
+        "rows": 1,
+        "behavior": "append",
+        "width": "half",
+        "type": "textarea"
+      },
+      {
+        "id": "field_view",
+        "dataKey": "view",
+        "label": "视图",
+        "rows": 1,
+        "behavior": "replace",
+        "width": "half",
+        "type": "textarea"
+      },
+      {
+        "id": "field_light",
+        "dataKey": "light",
+        "label": "光线",
+        "rows": 1,
+        "behavior": "append",
+        "width": "half",
+        "type": "textarea"
+      },
+      {
+        "id": "field_color",
+        "dataKey": "color",
+        "label": "颜色",
+        "rows": 1,
+        "behavior": "replace",
+        "width": "half",
+        "type": "textarea"
+      },
+      {
+        "id": "field_composition",
+        "dataKey": "composition",
+        "label": "构图",
+        "rows": 1,
+        "behavior": "append",
+        "width": "half",
+        "type": "textarea"
+      },
+      {
+        "id": "field_background",
+        "dataKey": "background",
+        "label": "背景",
+        "rows": 1,
+        "behavior": "append",
+        "width": "full",
+        "type": "textarea"
+      },
+      {
+        "id": "field_ratio",
+        "dataKey": "ratio",
+        "label": "比例",
+        "behavior": "special",
+        "width": "full"
+      }
+    ]
+  },
+  "libraryData": {
+    "3d风格插图": {
+      "fieldValues": {
+        "promptTitle": "3d风格插图",
+        "subject": "3d风格插图",
+        "objects": "主体为：不锈钢磨砂质感的硬盘，周围有交错堆放的装饰物品：, 正方形, 长方形, 圆形, 波浪, 圆圈，",
+        "style": "扁平体的玻璃透明图标",
+        "material": "3d磨砂玻璃材质",
+        "view": "正面视角，漂浮空中",
+        "lighting": "光感, 磨砂效果",
+        "color": "亮蓝色调",
+        "composition": "主体物品在画面右边，左边留空，物品排列主次分明，富有层次感，",
+        "background": "背景有：细小的波点装饰, 镭射变换的色彩点缀，蓝色背景",
+        "ratio": "16:9"
+      },
+      "editorConfig": {
+        "version": 4,
+        "fields": [
+          {
+            "id": "prompt-title-field",
+            "dataKey": "promptTitle",
+            "label": "提示词主题",
+            "type": "input",
+            "behavior": "special",
+            "width": "full"
+          },
+          {
+            "id": "field_1751857529600",
+            "dataKey": "subject",
+            "label": "主题",
+            "rows": 1,
+            "behavior": "append",
+            "width": "full"
+          },
+          {
+            "id": "field_1751857426447_2",
+            "dataKey": "objects",
+            "label": "物体元素",
+            "rows": 2,
+            "behavior": "append",
+            "width": "full"
+          },
+          {
+            "id": "field_1751857426447_5",
+            "dataKey": "style",
+            "label": "风格",
+            "rows": 1,
+            "behavior": "append",
+            "width": "full"
+          },
+          {
+            "id": "field_1751857426447_3",
+            "dataKey": "material",
+            "label": "材质",
+            "rows": 1,
+            "behavior": "append",
+            "width": "half"
+          },
+          {
+            "id": "field_1751857426447_4",
+            "dataKey": "view",
+            "label": "视角",
+            "rows": 1,
+            "behavior": "replace",
+            "width": "half"
+          },
+          {
+            "id": "field_1751857426447_6",
+            "dataKey": "lighting",
+            "label": "光影效果",
+            "rows": 1,
+            "behavior": "append",
+            "width": "half"
+          },
+          {
+            "id": "field_1751857426447_8",
+            "dataKey": "color",
+            "label": "色调",
+            "rows": 1,
+            "behavior": "replace",
+            "width": "half"
+          },
+          {
+            "id": "field_1751857426447_7",
+            "dataKey": "composition",
+            "label": "构图方式",
+            "rows": 1,
+            "behavior": "append",
+            "width": "full"
+          },
+          {
+            "id": "field_1751857426447_9",
+            "dataKey": "background",
+            "label": "背景装饰",
+            "rows": 1,
+            "behavior": "append",
+            "width": "full"
+          },
+          {
+            "id": "field_1751857426447_10",
+            "dataKey": "ratio",
+            "label": "比例",
+            "behavior": "special",
+            "width": "full"
+          }
+        ]
+      }
+    },
+    "3d风格插图-01": {
+      "fieldValues": {
+        "promptTitle": "3d风格插图-01",
+        "subject": "3d风格插图",
+        "objects": "主体为：不锈钢磨砂质感的时钟，周围有堆放的装饰物品：, 正方形, 长方形, 圆形, 波浪, 圆圈",
+        "background": "背景有：细小的波点装饰, 镭射变换的色彩点缀",
+        "style": "3d渲染，圆润造型",
+        "material": "3d磨砂玻璃材质",
+        "view": "正面视角",
+        "lighting": "光感, 磨砂效果，镭射",
+        "color": "亮橙色调，橙色背景",
+        "composition": "主体物品在画面右边，左边留空，物品排列主次分明，主体物较大，装饰物较小，富有层次感，倾斜排列",
+        "ratio": "16:9"
+      },
+      "editorConfig": {
+        "version": 4,
+        "fields": [
+          {
+            "id": "prompt-title-field",
+            "dataKey": "promptTitle",
+            "label": "提示词主题",
+            "type": "input",
+            "behavior": "special",
+            "width": "full"
+          },
+          {
+            "id": "field_1751857529600",
+            "dataKey": "subject",
+            "label": "主题",
+            "rows": 1,
+            "behavior": "append",
+            "width": "full"
+          },
+          {
+            "id": "field_1751857426447_2",
+            "dataKey": "objects",
+            "label": "物体元素",
+            "rows": 2,
+            "behavior": "append",
+            "width": "full"
+          },
+          {
+            "id": "field_1751857426447_9",
+            "dataKey": "background",
+            "label": "背景装饰",
+            "rows": 1,
+            "behavior": "append",
+            "width": "full"
+          },
+          {
+            "id": "field_1751857426447_5",
+            "dataKey": "style",
+            "label": "风格",
+            "rows": 1,
+            "behavior": "append",
+            "width": "full"
+          },
+          {
+            "id": "field_1751857426447_3",
+            "dataKey": "material",
+            "label": "材质",
+            "rows": 1,
+            "behavior": "append",
+            "width": "half"
+          },
+          {
+            "id": "field_1751857426447_4",
+            "dataKey": "view",
+            "label": "视角",
+            "rows": 1,
+            "behavior": "replace",
+            "width": "half"
+          },
+          {
+            "id": "field_1751857426447_6",
+            "dataKey": "lighting",
+            "label": "光影效果",
+            "rows": 1,
+            "behavior": "append",
+            "width": "half"
+          },
+          {
+            "id": "field_1751857426447_8",
+            "dataKey": "color",
+            "label": "色调",
+            "rows": 1,
+            "behavior": "replace",
+            "width": "half"
+          },
+          {
+            "id": "field_1751857426447_7",
+            "dataKey": "composition",
+            "label": "构图方式",
+            "rows": 1,
+            "behavior": "append",
+            "width": "full"
+          },
+          {
+            "id": "field_1751857426447_10",
+            "dataKey": "ratio",
+            "label": "比例",
+            "behavior": "special",
+            "width": "full"
+          }
+        ]
+      }
+    },
+    "3D元素生成": {
+      "fieldValues": {
+        "promptTitle": "3D元素生成",
+        "subject": "3d风格的插图",
+        "objects": "摄像机",
+        "style": "卡通设计，简约造型",
+        "material": "磨砂玻璃配金属，高光",
+        "view": "侧面视角，漂浮在空中",
+        "lighting": "正面打光，侧面辅助光, 光感",
+        "color": "",
+        "composition": "居中构图",
+        "background": "黑色背景",
+        "ratio": "1:1"
+      },
+      "editorConfig": {
+        "version": 4,
+        "fields": [
+          {
+            "id": "prompt-title-field",
+            "dataKey": "promptTitle",
+            "label": "提示词主题",
+            "type": "input",
+            "behavior": "special",
+            "width": "full"
+          },
+          {
+            "id": "field_1751857529600",
+            "dataKey": "subject",
+            "label": "主题",
+            "rows": 1,
+            "behavior": "append",
+            "width": "full"
+          },
+          {
+            "id": "field_1751857426447_2",
+            "dataKey": "objects",
+            "label": "物体元素",
+            "rows": 2,
+            "behavior": "append",
+            "width": "full"
+          },
+          {
+            "id": "field_1751857426447_5",
+            "dataKey": "style",
+            "label": "风格",
+            "rows": 1,
+            "behavior": "append",
+            "width": "full"
+          },
+          {
+            "id": "field_1751857426447_3",
+            "dataKey": "material",
+            "label": "材质",
+            "rows": 1,
+            "behavior": "append",
+            "width": "half"
+          },
+          {
+            "id": "field_1751857426447_4",
+            "dataKey": "view",
+            "label": "视角",
+            "rows": 1,
+            "behavior": "replace",
+            "width": "half"
+          },
+          {
+            "id": "field_1751857426447_6",
+            "dataKey": "lighting",
+            "label": "光影效果",
+            "rows": 1,
+            "behavior": "append",
+            "width": "half"
+          },
+          {
+            "id": "field_1751857426447_8",
+            "dataKey": "color",
+            "label": "色调",
+            "rows": 1,
+            "behavior": "replace",
+            "width": "half"
+          },
+          {
+            "id": "field_1751857426447_7",
+            "dataKey": "composition",
+            "label": "构图方式",
+            "rows": 1,
+            "behavior": "append",
+            "width": "full"
+          },
+          {
+            "id": "field_1751857426447_9",
+            "dataKey": "background",
+            "label": "背景装饰",
+            "rows": 1,
+            "behavior": "append",
+            "width": "full"
+          },
+          {
+            "id": "field_1751857426447_10",
+            "dataKey": "ratio",
+            "label": "比例",
+            "behavior": "special",
+            "width": "full"
+          }
+        ]
+      }
+    },
+    "3d直播背景图生成": {
+      "fieldValues": {
+        "promptTitle": "3d直播背景图生成",
+        "subject": "3d风格的插图",
+        "objects": "一个视频剪辑的工作空间，各种设备陈列在室内空间中，多屏显示器，摄像机，话筒，顶部白色灯光",
+        "style": "卡通设计，简约造型，",
+        "material": "黑色磨砂玻璃与会金色材质",
+        "view": "正视图",
+        "lighting": "正面打光，侧面辅助光, 光感",
+        "color": "深灰色调",
+        "composition": "居中构图",
+        "background": "黑色背景",
+        "ratio": "9:16"
+      },
+      "editorConfig": {
+        "version": 4,
+        "fields": [
+          {
+            "id": "prompt-title-field",
+            "dataKey": "promptTitle",
+            "label": "提示词主题",
+            "type": "input",
+            "behavior": "special",
+            "width": "full"
+          },
+          {
+            "id": "field_1751857529600",
+            "dataKey": "subject",
+            "label": "主题",
+            "rows": 1,
+            "behavior": "append",
+            "width": "full"
+          },
+          {
+            "id": "field_1751857426447_2",
+            "dataKey": "objects",
+            "label": "物体元素",
+            "rows": 2,
+            "behavior": "append",
+            "width": "full"
+          },
+          {
+            "id": "field_1751857426447_5",
+            "dataKey": "style",
+            "label": "风格",
+            "rows": 1,
+            "behavior": "append",
+            "width": "full"
+          },
+          {
+            "id": "field_1751857426447_3",
+            "dataKey": "material",
+            "label": "材质",
+            "rows": 1,
+            "behavior": "append",
+            "width": "half"
+          },
+          {
+            "id": "field_1751857426447_4",
+            "dataKey": "view",
+            "label": "视角",
+            "rows": 1,
+            "behavior": "replace",
+            "width": "half"
+          },
+          {
+            "id": "field_1751857426447_6",
+            "dataKey": "lighting",
+            "label": "光影效果",
+            "rows": 1,
+            "behavior": "append",
+            "width": "half"
+          },
+          {
+            "id": "field_1751857426447_8",
+            "dataKey": "color",
+            "label": "色调",
+            "rows": 1,
+            "behavior": "replace",
+            "width": "half"
+          },
+          {
+            "id": "field_1751857426447_7",
+            "dataKey": "composition",
+            "label": "构图方式",
+            "rows": 1,
+            "behavior": "append",
+            "width": "full"
+          },
+          {
+            "id": "field_1751857426447_9",
+            "dataKey": "background",
+            "label": "背景装饰",
+            "rows": 1,
+            "behavior": "append",
+            "width": "full"
+          },
+          {
+            "id": "field_1751857426447_10",
+            "dataKey": "ratio",
+            "label": "比例",
+            "behavior": "special",
+            "width": "full"
+          }
+        ]
+      }
+    },
+    "3d风格KV": {
+      "fieldValues": {
+        "promptTitle": "3d风格KV",
+        "subject": "3d风格的渲染图",
+        "objects": "主体为：在蓝色的海面上有一个小岛，中间主体为一个大大的icon扁扁的立方体图标，岛上面还有其它装饰围绕它：大的红色的礼盒，椰树，大杯柠檬茶，草帽，螃蟹，海星，海鸥，白色云朵",
+        "background": "",
+        "style": "3d渲染，卡通造型",
+        "material": "所有物品带有泥塑材质，光滑，高光",
+        "view": "正视角",
+        "lighting": "产品打光",
+        "color": "亮蓝色色调",
+        "composition": "主体在画面中间，较大，其它装饰作为搭配，画面构成富有层次感",
+        "ratio": "3:4"
+      },
+      "editorConfig": {
+        "version": 4,
+        "fields": [
+          {
+            "id": "prompt-title-field",
+            "dataKey": "promptTitle",
+            "label": "提示词主题",
+            "type": "input",
+            "behavior": "special",
+            "width": "full"
+          },
+          {
+            "id": "field_1751857529600",
+            "dataKey": "subject",
+            "label": "主题",
+            "rows": 1,
+            "behavior": "append",
+            "width": "full"
+          },
+          {
+            "id": "field_1751857426447_2",
+            "dataKey": "objects",
+            "label": "物体元素",
+            "rows": 2,
+            "behavior": "append",
+            "width": "full"
+          },
+          {
+            "id": "field_1751857426447_9",
+            "dataKey": "background",
+            "label": "背景装饰",
+            "rows": 1,
+            "behavior": "append",
+            "width": "full"
+          },
+          {
+            "id": "field_1751857426447_5",
+            "dataKey": "style",
+            "label": "风格",
+            "rows": 1,
+            "behavior": "append",
+            "width": "full"
+          },
+          {
+            "id": "field_1751857426447_3",
+            "dataKey": "material",
+            "label": "材质",
+            "rows": 1,
+            "behavior": "append",
+            "width": "half"
+          },
+          {
+            "id": "field_1751857426447_4",
+            "dataKey": "view",
+            "label": "视角",
+            "rows": 1,
+            "behavior": "replace",
+            "width": "half"
+          },
+          {
+            "id": "field_1751857426447_6",
+            "dataKey": "lighting",
+            "label": "光影效果",
+            "rows": 1,
+            "behavior": "append",
+            "width": "half"
+          },
+          {
+            "id": "field_1751857426447_8",
+            "dataKey": "color",
+            "label": "色调",
+            "rows": 1,
+            "behavior": "replace",
+            "width": "half"
+          },
+          {
+            "id": "field_1751857426447_7",
+            "dataKey": "composition",
+            "label": "构图方式",
+            "rows": 1,
+            "behavior": "append",
+            "width": "full"
+          },
+          {
+            "id": "field_1751857426447_10",
+            "dataKey": "ratio",
+            "label": "比例",
+            "behavior": "special",
+            "width": "full"
+          }
+        ]
+      }
+    },
+    "实物场景": {
+      "fieldValues": {
+        "promptTitle": "实物场景",
+        "subject": "写实产品摄影",
+        "objects": "瑞幸咖啡的两个咖啡产品来做个主图视觉，要有背景氛围，主要内容有2个咖啡杯，这两个产品是小黄油拿铁（上面有冰块牛奶在杯体下方，咖啡在上面）与小黄油美式（顶部是冰块，泡在上面是牛奶，底部是深色的黑咖啡），杯子用的透明的塑料杯，上面有瑞幸的logo，画面风格是色彩鲜艳、主体是两个瑞幸透明咖啡杯，占画面较大的空间。场景是在一片绿油油的草地上，有些许零星的小白花。营造出温馨舒适的氛围。杯子挨在一起错位的摆在草地上，投射出阴影，增加氛围感。",
+        "style": "富有现代感的商业摄影风格",
+        "material": "",
+        "view": "视角为正视角",
+        "lighting": "商业产品打光",
+        "color": "",
+        "composition": "主体在画面的右边，左边天空留白",
+        "background": "背景有：蓝色天空，天空中有几朵小小的云朵",
+        "ratio": "1:1"
+      },
+      "editorConfig": {
+        "version": 4,
+        "fields": [
+          {
+            "id": "prompt-title-field",
+            "dataKey": "promptTitle",
+            "label": "提示词主题",
+            "type": "input",
+            "behavior": "special",
+            "width": "full"
+          },
+          {
+            "id": "field_1751857529600",
+            "dataKey": "subject",
+            "label": "主题",
+            "rows": 1,
+            "behavior": "append",
+            "width": "full"
+          },
+          {
+            "id": "field_1751857426447_2",
+            "dataKey": "objects",
+            "label": "物体元素",
+            "rows": 2,
+            "behavior": "append",
+            "width": "full"
+          },
+          {
+            "id": "field_1751857426447_5",
+            "dataKey": "style",
+            "label": "风格",
+            "rows": 1,
+            "behavior": "append",
+            "width": "full"
+          },
+          {
+            "id": "field_1751857426447_3",
+            "dataKey": "material",
+            "label": "材质",
+            "rows": 1,
+            "behavior": "append",
+            "width": "half"
+          },
+          {
+            "id": "field_1751857426447_4",
+            "dataKey": "view",
+            "label": "视角",
+            "rows": 1,
+            "behavior": "replace",
+            "width": "half"
+          },
+          {
+            "id": "field_1751857426447_6",
+            "dataKey": "lighting",
+            "label": "光影效果",
+            "rows": 1,
+            "behavior": "append",
+            "width": "half"
+          },
+          {
+            "id": "field_1751857426447_8",
+            "dataKey": "color",
+            "label": "色调",
+            "rows": 1,
+            "behavior": "replace",
+            "width": "half"
+          },
+          {
+            "id": "field_1751857426447_7",
+            "dataKey": "composition",
+            "label": "构图方式",
+            "rows": 1,
+            "behavior": "append",
+            "width": "full"
+          },
+          {
+            "id": "field_1751857426447_9",
+            "dataKey": "background",
+            "label": "背景装饰",
+            "rows": 1,
+            "behavior": "append",
+            "width": "full"
+          },
+          {
+            "id": "field_1751857426447_10",
+            "dataKey": "ratio",
+            "label": "比例",
+            "behavior": "special",
+            "width": "full"
+          }
+        ]
+      }
+    },
+    "style": [
+      "3d风格",
+      "韩国手绘线条插画风"
+    ],
+    "view": [
+      "4分之3视角",
+      "侧视图",
+      "正视图"
+    ],
+    "material": [
+      "塑料",
+      "布料",
+      "泥塑",
+      "磨砂不锈钢材质",
+      "磨砂玻璃",
+      "磨砂银色",
+      "黄金"
+    ],
+    "color": [
+      "亮蓝色",
+      "红色",
+      "黄色"
+    ],
+    "lighting": [
+      "正面打光",
+      "顶部光源",
+      "产品打光"
+    ],
+    "background": [
+      "干净的白色背景"
+    ],
+    "newField11": [
+      "三维模型渲染图"
+    ],
+    "light": [
+      "产品大光",
+      "侧光",
+      "晚霞",
+      "清晨",
+      "自然光",
+      "顶光"
+    ],
+    "composition": [
+      "中心构图",
+      "黄金分割构图"
+    ]
+  },
+  "themes": {
+    "3D卡通渲染": {
+      "fieldValues": {
+        "title": "3D卡通渲染",
+        "promptTopic": "3D卡通渲染",
+        "objects": "一辆紫色的出租车停在一块圆形绿色的草坪上，草坪上有零星的白色花朵，车的侧面对镜头，画面的背后有几张10元大号红色优惠券成不太规则的放射状喷发出来，蓝天白云，树木草丛",
+        "style": "3d风格，卡通造型，卡通化，光线追踪，参考Pinterest、Dribbble 风格，用OC渲染器",
+        "material": "",
+        "view": "特写镜头",
+        "light": "侧面辅助光, 光感, 荧光渗透",
+        "color": "丰富颜色",
+        "composition": "创意构图，更精致的表现和画面",
+        "background": "紫色背景",
+        "ratio": "4:3"
+      },
+      "imageUrl": "https://s2.loli.net/2025/08/03/hAMEVmKyUSFstLX.png",
+      "category": "3D",
+      "isFavorite": true
+    },
+    "2.5D三维模型": {
+      "fieldValues": {
+        "title": "2.5D三维模型",
+        "promptTopic": "2.5D三维模型插图",
+        "objects": "一个直播间的场景，座椅，桌子，摄像机，男生主播，",
+        "style": "3d渲染，卡通造型，微型景观，立方体",
+        "material": "",
+        "view": "等距镜头",
+        "light": "",
+        "color": "舒适的银蓝配色方案",
+        "composition": "对称构图",
+        "background": "白色背景，UHD 8K",
+        "ratio": "1:1"
+      },
+      "imageUrl": "https://s2.loli.net/2025/08/03/3ACJSsNcElv9oad.png",
+      "category": "3D",
+      "isFavorite": true
+    },
+    "实物场景": {
+      "fieldValues": {
+        "title": "实物场景",
+        "promptTopic": "实物场景",
+        "objects": "瑞幸咖啡的两个咖啡产品来做个主图视觉，要有背景氛围，主要内容有2个咖啡杯，这两个产品是小黄油拿铁（上面有冰块牛奶在杯体下方，咖啡在上面）与小黄油美式（顶部是冰块，泡在上面是牛奶，底部是深色的黑咖啡），杯子用的透明的塑料杯，上面有瑞幸的logo，画面风格是色彩鲜艳、主体是两个瑞幸透明咖啡杯，占画面较大的空间。场景是在一片绿油油的草地上，有些许零星的小白花。营造出温馨舒适的氛围。杯子挨在一起错位的摆在草地上，投射出阴影，增加氛围感。",
+        "style": "富有现代感的商业摄影风格",
+        "material": "",
+        "view": "视角为正视角",
+        "light": "商业产品打光",
+        "color": "",
+        "composition": "主体在画面的右边，左边天空留白",
+        "background": "背景有：蓝色天空，天空中有几朵小小的云朵",
+        "ratio": "1:1"
+      },
+      "imageUrl": "https://s2.loli.net/2025/08/03/dhw4Svzrj5JqUNP.png",
+      "category": "摄影",
+      "isFavorite": true
+    },
+    "3d图标设计": {
+      "fieldValues": {
+        "title": "3d图标设计",
+        "promptTopic": "飘在空中的3d图标icon",
+        "objects": "黄色的立体的四角星",
+        "style": "3d风格，卡通造型",
+        "material": "磨砂玻璃材质",
+        "view": "4分之3视角",
+        "light": "",
+        "color": "",
+        "composition": "中心构图",
+        "background": "干净的白色背景",
+        "ratio": "1:1"
+      },
+      "imageUrl": "https://s2.loli.net/2025/08/03/F5SNHuJOqUr9j3k.png",
+      "category": "3D",
+      "isFavorite": false
+    },
+    "3d直播背景图生成": {
+      "fieldValues": {
+        "title": "3d直播背景图生成",
+        "promptTopic": "3d直播背景图生成",
+        "objects": "一个视频剪辑的工作空间，各种设备陈列在室内空间中，多屏显示器，摄像机，话筒，顶部白色灯光",
+        "style": "卡通设计，简约造型，",
+        "material": "黑色磨砂玻璃与会金色材质",
+        "view": "正视图",
+        "light": "",
+        "color": "深灰色调",
+        "composition": "居中构图",
+        "background": "黑色背景",
+        "ratio": "9:16"
+      },
+      "imageUrl": "https://s2.loli.net/2025/08/03/WwZmleYOLqMV5Ag.png",
+      "category": "3D",
+      "isFavorite": true
+    },
+    "几何风格的插图": {
+      "fieldValues": {
+        "title": "几何风格的插图",
+        "promptTopic": "磨砂玻璃几何风格的插图",
+        "objects": "画面包含文档、计算器、钢笔、喇叭、硬盘、文件夹形状，以及正方形、长方形、圆形、波浪、圆圈的扁平体玻璃透明图标",
+        "style": "现代艺术构成、精致繁复、包豪斯风格",
+        "material": "磨砂玻璃材质、磨砂金属",
+        "view": "顶视图",
+        "light": "有光感和磨砂效果",
+        "color": "清新亮蓝色调",
+        "composition": "，具抽象艺术构成、叠加、抽象构成与连续图案，",
+        "background": "带有细小精致波点装饰与镭射变换色彩点缀",
+        "ratio": "1:1"
+      },
+      "imageUrl": "https://s2.loli.net/2025/08/03/bJtZpiDlS8LTNAG.png",
+      "category": "图标",
+      "isFavorite": false
+    },
+    "拟人风格3d图标": {
+      "fieldValues": {
+        "title": "拟人风格3d图标",
+        "promptTopic": "拟人的3d图标",
+        "objects": "两个杯子手牵手",
+        "style": "卡通设计，可爱风，带有大眼睛，拟人化，",
+        "material": "塑料材质",
+        "view": "正视图",
+        "light": "侧面辅助光, 光感, 荧光渗透",
+        "color": "亮蓝色",
+        "composition": "中心构图",
+        "background": "白色背景",
+        "ratio": "1:1"
+      },
+      "imageUrl": "https://s2.loli.net/2025/08/03/cKA5aGNTqmew61r.png",
+      "category": "3D",
+      "isFavorite": true
+    }
+  },
+  "systemSettings": {
+    "translation": {
+      "service": "mymemory",
+      "ollama": {
+        "url": "http://localhost:11434",
+        "model": "qwen3:8b",
+        "prompt": "请将以下中文文本翻译成英文，不需要额外的思考，不输出think标签内容包括<think></think>，只输出英文 Text: \"{text}\" English translation:"
+      },
+      "mymemory": {
+        "sourceLang": "zh-CN",
+        "targetLang": "en-GB"
+      }
+    },
+    "customRatios": [
+      "21:9",
+      "32:9",
+      "4:5"
+    ],
+    "themeCategories": [
+      "默认",
+      "3D",
+      "插图",
+      "摄影",
+      "背景",
+      "图标"
+    ],
+    "smms": {
+      "token": "IMBBxIVmNCpwqgbhQYW5bwANjkArnbmd",
+      "altDomain": ""
+    }
+  }
+}
