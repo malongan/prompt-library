@@ -8,8 +8,6 @@
 
 ## 使用方法
 
-## 使用方法
-
 1. 下载插件：[点击下载 v2.2.0](https://github.com/malongan/prompt-library/releases/tag/v2.2.0)  
 2. 解压为 `prompt-library` 文件夹  
 3. 放到 Obsidian 笔记库下面的 `plugins` 文件夹中  
